@@ -98,7 +98,7 @@ install_filemanager()
 
 	echo "Downloading File Browser for $filemanager_os/$filemanager_arch..."
 	if type -p curl >/dev/null 2>&1; then
-		net_getter="curl -fsSL"
+		net_getter="curl -kfsSL"
 	elif type -p wget >/dev/null 2>&1; then
 		net_getter="wget -qO-"
 	else
